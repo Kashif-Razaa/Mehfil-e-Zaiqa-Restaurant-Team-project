@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.m-container {
+    background-image: url(/images/background-pic.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+/* ---Nav Start--- */
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    margin: 30px 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.nav-btn {
+    margin-right: 50px;
+    width: 160px;
+    height: 40px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+nav ul a:hover {
+    color: orange;
+}
+
+nav ul a:active {
+    color: orange;
+}
+
+/* ---Nav End--- */
+
+/* ---Hero Start--- */
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 650px;
+    margin-top: 50px;
+
+}
+
+.hero-left {
+    margin-left: 70px;
+}
+
+.hero-left h1 {
+    font-size: 60px;
+    margin: 0;
+}
+.hero-btn {
+    width: 180px;
+    height: 56px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-right img {
+    width: 500px;
+    animation: hero-img 21s linear infinite;
+
+}
+@keyframes hero-img{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
