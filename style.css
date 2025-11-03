@@ -19,6 +19,12 @@ nav {
     justify-content: space-between;
 
 }
+.logo{
+    display: flex;
+}
+.logo h1{
+    font-size: 45px;
+}
 
 nav ul {
     display: flex;
