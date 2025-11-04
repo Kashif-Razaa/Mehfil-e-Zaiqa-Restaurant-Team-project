@@ -17,12 +17,14 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 0;
 }
-.logo{
+
+.logo {
     display: flex;
 }
-.logo h1{
+
+.logo h1 {
     font-size: 45px;
 }
 
@@ -32,12 +34,14 @@ nav ul {
     text-decoration: none;
     list-style: none;
     align-items: center;
-    margin: 30px 0;
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 
 nav ul a {
     text-decoration: none;
     color: wheat;
+    font-weight: bold;
 }
 
 .nav-btn {
@@ -47,6 +51,7 @@ nav ul a {
     background-color: orange;
     border: none;
     color: white;
+    cursor: pointer;
     font-size: 15px;
     border-radius: 2px;
 }
@@ -71,20 +76,45 @@ nav ul a:active {
 
 .hero-left {
     margin-left: 70px;
+    margin-top: 60px;
 }
 
 .hero-left h1 {
     font-size: 60px;
     margin: 0;
+    animation: left-h1-p-btn 0.8s ease-in forwards;
+    opacity: 0;
 }
+
+.hero-left p {
+    animation: left-h1-p-btn 1s ease-in 0.4s forwards;
+    opacity: 0;
+}
+
 .hero-btn {
     width: 180px;
     height: 56px;
     background-color: orange;
     border: none;
     color: white;
+    cursor: pointer;
     font-size: 15px;
-    border-radius: 2px
+    border-radius: 2px;
+    animation: left-h1-p-btn 1.2s ease-in 0.6s forwards;
+    opacity: 0;
+
+}
+
+@keyframes left-h1-p-btn {
+    0% {
+        transform: translateX(-70px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 
 .hero-right {
@@ -95,16 +125,119 @@ nav ul a:active {
 }
 
 .hero-right img {
-    width: 500px;
-    animation: hero-img 21s linear infinite;
+    width: 550px;
+    animation: hero-img 23s linear infinite;
 
 }
-@keyframes hero-img{
-    0%{
+
+@keyframes hero-img {
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
 
+/* ---Footer Start--- */
+footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #0f172b;
+}
+
+footer .font-pacifico {
+    font-family: 'Pacifico', cursive;
+    color: orange;
+    text-align: center;
+    margin-top: 110px;
+}
+
+footer .fr1 ul {
+    list-style: none;
+    margin-left: 70px;
+    
+}
+
+footer .fr1 ul li {
+    margin-top: 10px;
+}
+
+footer .fr1 ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+footer .fr1 ul li::before {
+    content: ">";
+    color: white;
+    margin-right: 20px;
+}
+
+footer .fr2 {
+    padding-left: 100px;
+    color: white;
+}
+
+.fr2 .cell {
+    display: flex;
+    gap: 30px;
+}
+
+.fr2 .cell h3 {
+    margin: 0;
+}
+
+.fr2 .location {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.fr2 .location h3 {
+    margin: 0;
+}
+.fr2 .email{
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+}
+.fr2 .email h3{
+    margin: 0;
+}
+.fr3{
+    padding-left: 100px;
+    color: white;
+}
+.fr3 h2,h3{
+    margin: 0;
+}
+.fr4{
+    color: white;
+    padding-left: 80px;
+    padding-right: 70px;
+}
+.fr4 input{
+    padding: 20px;
+    margin-top: 15px;
+    font-size: larger;
+    border: none;
+}
+.fr4 button{
+    position: relative;
+    left: 170px;
+    bottom: 56px;
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
