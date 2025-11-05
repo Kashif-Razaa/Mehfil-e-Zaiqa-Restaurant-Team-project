@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Heebo", sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -80,7 +80,7 @@ nav ul a:active {
 }
 
 .hero-left h1 {
-    font-size: 60px;
+    font-size: 70px;
     margin: 0;
     animation: left-h1-p-btn 0.8s ease-in forwards;
     opacity: 0;
@@ -158,7 +158,7 @@ footer .font-pacifico {
 footer .fr1 ul {
     list-style: none;
     margin-left: 70px;
-    
+
 }
 
 footer .fr1 ul li {
@@ -201,36 +201,44 @@ footer .fr2 {
 .fr2 .location h3 {
     margin: 0;
 }
-.fr2 .email{
+
+.fr2 .email {
     display: flex;
     gap: 30px;
     margin-top: 15px;
 }
-.fr2 .email h3{
+
+.fr2 .email h3 {
     margin: 0;
 }
-.fr3{
+
+.fr3 {
     padding-left: 100px;
     color: white;
 }
-.fr3 h2,h3{
+
+.fr3 h2,
+h3 {
     margin: 0;
 }
-.fr4{
+
+.fr4 {
     color: white;
     padding-left: 80px;
     padding-right: 70px;
 }
-.fr4 input{
+
+.fr4 input {
     padding: 20px;
     margin-top: 15px;
     font-size: larger;
     border: none;
 }
-.fr4 button{
+
+.fr4 button {
     position: relative;
-    left: 170px;
-    bottom: 56px;
+    left: 62%;
+    bottom: 23%;
     width: 100px;
     height: 50px;
     background-color: orange;
