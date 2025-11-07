@@ -42,6 +42,8 @@ body {
     border-radius: 10px;
 }
 
+/* Form Section */
+
 .form-section {
     flex: 1;
     background-color: #0d1b2a;
@@ -52,7 +54,7 @@ body {
 
 .cursive-title {
     font-family: 'Pacifico', cursive;
-    font-size: 20px;
+    font-size: 30px;
     color: #ffa500;
     margin-bottom: 10px;
     text-align: center;
@@ -116,6 +118,13 @@ button:hover {
     padding: 10%;
 }
 
+.section1 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    padding-bottom: 10%;
+}
+
 /* Our Team page CSS */
 
 .heading {
@@ -130,10 +139,37 @@ button:hover {
     font-weight: bolder;
 }
 
+.card-section {
+    animation-name: left-h1-p-btn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+
 .card {
     background: #0d1b2a;
     color: white;
     margin-top: 15%;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    transition-property: transform;
+    transition-timing-function: ease;
+}
+
+@keyframes left-h1-p-btn {
+    0% {
+        transform: translateX(-70px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .header {
@@ -143,7 +179,7 @@ button:hover {
 .header h1 {
     font-size: 50px;
     font-weight: bolder;
-    color: white;
+    color: black;
 }
 
 .card img {
