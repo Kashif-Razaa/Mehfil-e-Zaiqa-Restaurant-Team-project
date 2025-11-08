@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Fonts link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+        }
+
+        .hover:hover {
+            transform: scale(1.05);
+            transition-property: transform, box-shadow, background-color, color;
+            transition: transform 0.6s ease;
+            box-shadow: 0 4px 8px rgb(255, 255, 255);
+            background: goldenrod;
+            color: rgb(255, 255, 255);
+        }
+
+        .m-container {
+            background-image: url(https://github.com/Kashif-Razaa/Mehfil-e-Zaiqa-Restaurant-Team-project/blob/Raza/images/background-pic.jpg?raw=true);
+            background-position: center;
+            background-size: cover;
+            color: white;
+        }
+
+        .m-container {
+            background-image: url(https://github.com/Kashif-Razaa/Mehfil-e-Zaiqa-Restaurant-Team-project/blob/Raza/images/background-pic.jpg?raw=true);
+            background-position: center;
+            background-size: cover;
+            color: white;
+        }
+
+        /* --Nav & Head Start-- */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+        }
+
+        .logo {
+            display: flex;
+        }
+
+        .logo h1 {
+            font-size: 45px;
+            margin-top: 33px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            text-decoration: none;
+            list-style: none;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: wheat;
+            font-weight: bold;
+        }
+
+        .nav-btn {
+            margin-right: 50px;
+            width: 160px;
+            height: 40px;
+            background-color: orange;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 2px;
+        }
+
+        nav ul a:hover {
+            color: orange;
+        }
+
+        nav ul a:active {
+            color: orange;
+        }
+
+        .head {
+            text-align: center;
+            height: 300px;
+        }
+
+        .head h1 {
+            font-size: 60px;
+            font-weight: 1000;
+        }
+
+        .head p {
+            font-size: 20px;
+            color: white;
+        }
+
+        .head p a {
+            text-decoration: none;
+            color: orange;
+        }
+
+        /* --Nav & head End-- */
+        /* ---Footer Start--- */
+        footer {
+            background-color: #0f172b;
+        }
+
+        footer .font-pacifico {
+            font-family: 'Pacifico', cursive;
+            color: orange;
+            margin-top: 110px;
+        }
+
+        .fr1 {
+            padding-left: 100px;
+        }
+
+        footer .fr1 ul {
+            list-style: none;
+            margin-top: 40px;
+        }
+
+        footer .fr1 ul li {
+            margin-top: 10px;
+        }
+
+        .fr1 ul li:hover {
+            transform: scale(1.1);
+        }
+
+        footer .fr1 ul a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        footer .fr1 ul li::before {
+            content: ">";
+            color: white;
+            margin-right: 20px;
+            font-weight: bolder;
+        }
+
+        footer .fr2 {
+            padding-left: 100px;
+            color: white;
+        }
+
+        .fr2 .cell {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .fr2 .location {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .fr2 .email {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .fr3 {
+            padding-left: 100px;
+            color: white;
+        }
+
+        .fr4 {
+            color: white;
+            padding-left: 80px;
+            padding-right: 70px;
+        }
+
+        .fr4 input {
+            padding: 15px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 2px;
+        }
+
+        .fr4 button {
+            position: relative;
+            left: 73%;
+            bottom: 14%;
+            width: 73px;
+            height: 47px;
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+            border-radius: 3px;
+        }
+
+        /* --Footer End-- */
+    </style>
+</head>
+
+<body>
+    <div class="m-container">
+        <nav>
+            <div class="logo">
+                <img src="https://github.com/Kashif-Razaa/Mehfil-e-Zaiqa-Restaurant-Team-project/blob/Raza/images/logo.png?raw=true" alt="" width="120px">
+                <h1>محفلِ ذائقہ</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">PAGES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><input type="button" name="nav-btn" value="BOOK A TABLE" class="nav-btn"></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="head">
+            <h1>Food Menu</h1>
+            <p><a href="#">Home </a> /<a href="#"> Pages </a> / Services</p>
+        </div>
+
+    </div>
+
+
+    <div class="container text-warning text-center fs-1" style="font-family:Pacifico ;">Our Services</div>
+    <div class="container text-dark text-center fs-1" style="font-family:Pacifico ;">Explore Our Services</div>
+
+
+    <div class="container text-center">
+        <div class="row mt-4 mb-4 justify-content-center">
+            <div class="col-md-3">
+                <div class="card hover" style="width: 18rem;">
+                    <img src="https://cdn-icons-gif.flaticon.com/15578/15578702.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Master Chef</h5>
+                        <p class="card-text">
+                            Master Chef of Mehfil-e-Zaiqa — a culinary artist who blends rich traditions with
+                            modern
+                            flavors, turning every dish into a masterpiece of taste, aroma, and perfection..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card hover" style="width: 18rem;">
+                    <img src="https://cdn-icons-gif.flaticon.com/15578/15578720.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Food</h5>
+                        <p class="card-text">At Mehfil-e-Zaiqa, every dish is made with fresh ingredients and
+                            authentic
+                            spices, offering rich taste, perfect hygiene, unmatched freshness, delightful aroma,
+                            and
+                            unforgettable flavor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card hover" style="width: 18rem;">
+                    <img src="https://cdn-icons-gif.flaticon.com/18124/18124723.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Online Order</h5>
+                        <p class="card-text">ChatGPT said:
+
+                            Order online from Mehfil-e-Zaiqa to enjoy rich taste, unmatched freshness,
+                            delightful aroma,
+                            and unforgettable flavor — made with fresh ingredients and authentic spices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card hover" style="width: 18rem;">
+                    <img src="https://cdn-icons-gif.flaticon.com/12146/12146049.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">24/7 Service</h5>
+                        <p class="card-text">Mehfil-e-Zaiqa offers 24/7 service — serving rich taste, unmatched
+                            freshness, delightful aroma, exceptional quality, unbeatable hygiene, and
+                            unforgettable
+                            flavor anytime you crave it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row mt-4 mb-4 justify-content-center">
+            <div class="col-md-3">
+                <div class="card hover" style="width: 18rem;">
+                    <img src="https://cdn-icons-gif.flaticon.com/18873/18873851.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Master Chef</h5>
+                        <p class="card-text">ChatGPT said:
+
+                            Master Chef of Mehfil-e-Zaiqa — a culinary artist who blends rich traditions with
+                            modern
+                            flavors, turning every dish into a masterpiece of taste, aroma, and perfection.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card hover" style="width: 18rem;">
+                    <img src="https://cdn-icons-gif.flaticon.com/9820/9820032.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Food</h5>
+                        <p class="card-text">At Mehfil-e-Zaiqa, every dish is made with fresh ingredients and
+                            authentic
+                            spices, offering rich taste, perfect hygiene, unmatched freshness, delightful aroma,
+                            and
+                            unforgettable flavor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card hover" style="width: 18rem;">
+                    <img src="https://cdn-icons-gif.flaticon.com/15576/15576198.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Online Order</h5>
+                        <p class="card-text">ChatGPT said:
+
+                            Order online from Mehfil-e-Zaiqa to enjoy rich taste, unmatched freshness,
+                            delightful aroma,
+                            and unforgettable flavor — made with fresh ingredients and authentic spices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card hover" style="width: 18rem;">
+                    <img src="https://cdn-icons-gif.flaticon.com/15370/15370739.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">24/7 Service</h5>
+                        <p class="card-text">Mehfil-e-Zaiqa offers 24/7 service — serving rich taste, unmatched
+                            freshness, delightful aroma, exceptional quality, unbeatable hygiene, and
+                            unforgettable
+                            flavor anytime you crave it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row mt-4 mb-4 justify-content-center">
+            <div class="col-md-3">
+                <div class="card hover" style="width: 18rem;">
+                    <img src="https://cdn-icons-gif.flaticon.com/15578/15578620.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Master Chef</h5>
+                        <p class="card-text">ChatGPT said:
+
+                            Master Chef of Mehfil-e-Zaiqa — a culinary artist who blends rich traditions with
+                            modern
+                            flavors, turning every dish into a masterpiece of taste, aroma, and perfection..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card hover" style="width: 18rem;">
+                    <img src="https://cdn-icons-gif.flaticon.com/9529/9529411.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Food</h5>
+                        <p class="card-text">At Mehfil-e-Zaiqa, every dish is made with fresh ingredients and
+                            authentic
+                            spices, offering rich taste, perfect hygiene, unmatched freshness, delightful aroma,
+                            and
+                            unforgettable flavor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card hover" style="width: 18rem;">
+                    <img src="https://cdn-icons-gif.flaticon.com/6416/6416379.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Online Order</h5>
+                        <p class="card-text">ChatGPT said:
+
+                            Order online from Mehfil-e-Zaiqa to enjoy rich taste, unmatched freshness,
+                            delightful aroma,
+                            and unforgettable flavor — made with fresh ingredients and authentic spices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card hover" style="width: 18rem;">
+                    <img src="https://cdn-icons-gif.flaticon.com/17576/17576925.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">24/7 Service</h5>
+                        <p class="card-text">Mehfil-e-Zaiqa offers 24/7 service — serving rich taste, unmatched
+                            freshness, delightful aroma, exceptional quality, unbeatable hygiene, and
+                            unforgettable
+                            flavor anytime you crave it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+
+        <div class="row">
+            <div class="fr1 col-3">
+                <h4 class="font-pacifico">
+                    Company ──
+                </h4>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Reservation</a></li>
+                    <li><a href="">Privicy Policy</a></li>
+                    <li><a href="">Terms & Condition</a></li>
+                </ul>
+            </div>
+            <div class="fr2 col-3">
+                <h4 class="font-pacifico">
+                    Contact ──
+                </h4>
+                <div class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white"
+                        aria-hidden="true">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
+                    </svg>
+                    <h6>
+                        Sukkur, Sindh, Pakistan
+                    </h6>
+                </div>
+                <div class="cell">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white"
+                        aria-hidden="true">
+                        <path
+                            d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57.55 0 1 .45 1 1v3.49c0 .55-.45 1-1 1C10.4 21 3 13.6 3 4.99c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.46.57 3.58.11.35.03.73-.24 1.01l-2.21 2.21z" />
+                    </svg>
+                    <h6>
+                        +92 3102773947
+                    </h6>
+
+                </div>
+
+
+                <div class="email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white"
+                        aria-hidden="true">
+                        <path
+                            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                    <h6>
+                        kashifraza@gmail.com
+                    </h6>
+                </div>
+            </div>
+            <div class="fr3 col-3">
+                <h4 class="font-pacifico">
+                    Opening ──
+                </h4>
+                <h4 class="mt-5">Monday - Sunday</h4>
+                <h6>09AM - 09PM</h6>
+                <br>
+                <h4>Sunday</h4>
+                <h5>10AM - 08PM</h5>
+            </div>
+            <div class="fr4 col-3">
+                <h4 class="font-pacifico">
+                    Newsletter ──
+                </h4>
+                <h6 class="mt-5">Dolor amet sit justo amet elitr clita ipsum elitr est.</h6>
+                <input type="email" placeholder="Your Email">
+                <button>SIGNUP</button>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
