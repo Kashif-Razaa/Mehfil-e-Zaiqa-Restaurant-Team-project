@@ -145,6 +145,10 @@ button:hover {
     animation-timing-function: ease;
     animation-iteration-count: 1;
 }
+.cardsection .row {
+    display: flex;
+    gap: 100px;    
+}
 
 .card {
     background: #0d1b2a;
