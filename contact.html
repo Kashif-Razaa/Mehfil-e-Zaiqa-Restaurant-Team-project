@@ -95,7 +95,20 @@
   .head h1 {
     font-size: 60px;
     font-weight: 1000;
+    animation: head-animation 1s ease-out forwards;
+    opacity: 0;
   }
+  @keyframes head-animation{
+  0% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
   .head p {
     font-size: 20px;
